@@ -3,6 +3,9 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int a, b;
+        a = 1;
+        b = 2;
+        String s = "sum";
     }
 }
