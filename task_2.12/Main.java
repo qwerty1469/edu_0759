@@ -38,4 +38,3 @@ public class Main {
         System.out.println("Длина самой длинной последовательности = "+maxLen);
     }
 }
-

@@ -14,11 +14,14 @@
 public class Main {
     public static void main(String[] args) {
         String[] words = {"Мама","Мыла","Раму"};
-        System.out.println(words[0]+words[1]+words[2]);
-        System.out.println(words[0]+words[2]+words[1]);
-        System.out.println(words[1]+words[0]+words[2]);
-        System.out.println(words[1]+words[2]+words[0]);
-        System.out.println(words[2]+words[0]+words[1]);
-        System.out.println(words[2]+words[1]+words[0]);
+
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words.length; j++) {
+                for (int k = 0; k < words.length; k++) {
+                    if (i!=j && j!=k && k!=i)
+                        System.out.println(words[i]+words[j]+words[k]);
+                }
+            }
+        }
     }
 }
