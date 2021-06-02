@@ -8,9 +8,34 @@
 3
 */
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Scanner scan = new Scanner(System.in);
 
+        int[] myArray = new int[10];
+        int numb = 0;
+        while (numb<myArray.length) {
+            System.out.print("Введите "+(numb+1)+" число: ");
+            myArray[numb] = scan.nextInt();
+            numb++;
+        }
+
+        int maxLen = 0;
+        int i = 0;
+        while (i < myArray.length) {
+            int count = 1;
+            while (myArray[i]==myArray[i+1]) {
+                count++;
+                if (i+2==myArray.length) break;
+                else i++;
+            }
+            if (maxLen < count) maxLen = count;
+            if (i+2==myArray.length) break;
+            else i++;
+        }
+        System.out.println("Длина самой длинной последовательности = "+maxLen);
     }
 }
+

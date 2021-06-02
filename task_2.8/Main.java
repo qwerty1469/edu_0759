@@ -4,7 +4,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int[] numbers = {2, 3, 4, 5};
+        int product = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            product *= numbers[i];
+        }
+        System.out.println(product);
     }
 }

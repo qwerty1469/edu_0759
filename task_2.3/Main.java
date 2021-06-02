@@ -15,7 +15,15 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int i = 1;
+        while (i < 11) {
+            int j = 0;
+            while (j < i) {
+                System.out.print(8);
+                j++;
+            }
+            i++;
+            System.out.println("");
+        }
     }
 }
