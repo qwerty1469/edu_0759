@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5779f6c5-fed2-420f-8aab-93b3e0dab7a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../task_2.12/out/production/task_2.12/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2.12/out/production/task_2.12/Main.class" afterDir="false" />
+    <list default="true" id="f14a2946-9d55-4bcd-9537-37adcae97121" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../task_3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3.1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.1/out/production/task_3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/out/production/task_3.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_3.2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.3/out/production/task_3.3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.4/out/production/task_3.4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.5/out/production/task_3.5/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,17 +26,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1tQNOyKFd0JZbrWYN9PR3Qfx7By" />
+  <component name="ProjectId" id="1tQs3KgvBva7yuSgIG2spIpwGHs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_3.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -46,11 +57,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5779f6c5-fed2-420f-8aab-93b3e0dab7a3" name="Default Changelist" comment="" />
-      <created>1622697324626</created>
+      <changelist id="f14a2946-9d55-4bcd-9537-37adcae97121" name="Default Changelist" comment="" />
+      <created>1622712447083</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622697324626</updated>
+      <updated>1622712447083</updated>
     </task>
     <servers />
   </component>

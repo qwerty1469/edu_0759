@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9165bda6-fffb-4901-80ab-ee168bb4d51b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../task_2.12/out/production/task_2.12/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2.12/out/production/task_2.12/Main.class" afterDir="false" />
+    <list default="true" id="58430732-c4b7-4d10-9ce2-0bad32c767f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../task_3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3.1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.1/out/production/task_3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.1/out/production/task_3.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3.2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.2/out/production/task_3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.2/out/production/task_3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_3.3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_3.3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3.4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.4/out/production/task_3.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.4/out/production/task_3.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3.5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.5/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3.5/out/production/task_3.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3.5/out/production/task_3.5/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1tQNTeABVuZ24lWVTNA1e2IjdJb" />
+  <component name="ProjectId" id="1tQs8OPnFTFxgVFsdg3eVBqSHR8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,11 +57,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9165bda6-fffb-4901-80ab-ee168bb4d51b" name="Default Changelist" comment="" />
-      <created>1622697362068</created>
+      <changelist id="58430732-c4b7-4d10-9ce2-0bad32c767f4" name="Default Changelist" comment="" />
+      <created>1622712487600</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622697362068</updated>
+      <updated>1622712487600</updated>
     </task>
     <servers />
   </component>
