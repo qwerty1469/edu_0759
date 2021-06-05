@@ -11,14 +11,18 @@
 
 public class Main {
     public static void main(String[] args){
+        Animal lisa1 = new Fox();
+        System.out.println(lisa1.getColor());
     }
 }
 
 interface Animal {
-    Color getColor();
+    default String getColor() {
+        return "Оранжевый";
+    };
 }
-    
-class Fox {
+
+class Fox implements Animal {
     public String getName() {
         return "Fox";
     }

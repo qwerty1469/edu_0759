@@ -19,19 +19,45 @@ Mouse jerryMouse = new Mouse("Jerry", 12 , 5),
 
 public class Main {
     public static void main(String[] args) {
-        Mouse jerryMouse = new Mouse("Jerry", 12, 5);
-
-        //напишите тут ваш код
+        Mouse jerryMouse = new Mouse("Jerry", 12, 5, "Brown");
+        Dog bigDog = new Dog("Бульдог", 9, 21.8, "Grey");
+        Cat tomCat = new Cat("Tom", 120, "Dark grey");
     }
 }
 class Mouse {
     String name;
     int height;
     int tail;
+    String colour;
 
-    public Mouse(String name, int height, int tail) {
+    public Mouse(String name, int height, int tail, String colour) {
         this.name = name;
         this.height = height;
         this.tail = tail;
+    }
+}
+
+class Dog {
+    String name;
+    int age;
+    double weight;
+    String colour;
+
+    public Dog(String name, int age, double weight, String colour) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+    }
+}
+
+class Cat {
+    String name;
+    int height;
+    String colour;
+
+    public Cat(String name, int height, String colour) {
+        this.name = name;
+        this.height = height;
+        this.colour = colour;
     }
 }

@@ -9,17 +9,22 @@
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.setName("Жужик");
-        System.out.println(cat.name);
+        Cat myrzik = new Cat();
+        System.out.println(myrzik.getName()); //имя созданного кота
+//        System.out.println(cat.name);
+        myrzik.setName("Жужик");
+        System.out.println(myrzik.getName()); //проверка нового имени
     }
 }
 
 class Cat {
     private String name = "безымянный кот";
 
-    public void setName(String name) {
-        //напишите тут ваш код
+    String getName() {
+        return name;
+    }
 
+    void setName (String name) {
+        this.name = name;
     }
 }
