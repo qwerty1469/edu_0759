@@ -41,9 +41,9 @@ public class Main {
                         "3 - Освободить комнату"        +"\n"+                      // evictionRoom
                         "4 - Свойства комнаты"          +"\n"+                      // descriptionsRoom
                         "5 - Показать комнаты с WiFi"   +"\n"+                      // getWiFi
-                        "6 - Показать комнаты с WC"     +"\n"+                      //
-                        "7 - Показать комнаты с Eat"    +"\n"+                      //
-                        "8 - Показать комнаты по кол-ву спальных мест"  +"\n"+      //
+                        "6 - Показать комнаты с WC"     +"\n"+                      // getWC
+                        "7 - Показать комнаты с Eat"    +"\n"+                      // getEat
+                        "8 - Показать комнаты по кол-ву спальных мест"  +"\n"+      // getQuantityBed
                         "exit - Выйти из программы"     +"\n"+                      // Выход
                         "--------------------------------------------");
             }
@@ -71,16 +71,16 @@ public class Main {
             else if (command.equals("5")) {     // Показать комнаты с WiFi
                 hotel.getWiFi(); }
 
-            else if (command.equals("6")) {     // Показать комнаты с WiFi
+            else if (command.equals("6")) {     // Показать комнаты с наличием сан.узла
                 hotel.getWC(); }
 
-            else if (command.equals("7")) {     // Показать комнаты с WiFi
+            else if (command.equals("7")) {     // Показать комнаты с включ. питанием
                 hotel.getEat(); }
 
             else if (command.equals("8")) {     // Показать комнаты по кол-ву мест
                 hotel.getQuantityBed(); }
 
-            else if (command.equals("exit")) {
+            else if (command.equals("exit")) { // выход
                 break;
             }
             else System.out.println("Команды не существует");
