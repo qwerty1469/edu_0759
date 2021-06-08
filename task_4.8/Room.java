@@ -46,4 +46,15 @@ public class Room {
     public void setFree(boolean free) {
         isFree = free;
     }
+    public void getDescriptions () {
+        System.out.print("Кол-во мест: "+this.quantity+". Сан.узел: ");
+        if (this.wc) System.out.print("есть. ");
+        else System.out.print("нет. ");
+        System.out.print("Питание: ");
+        if (this.eat) System.out.print("включено. ");
+        else System.out.print("не включено. ");
+        System.out.print("Wi-Fi: ");
+        if (this.wifi) System.out.println("есть.");
+        else System.out.println("нет.");
+    }
 }
