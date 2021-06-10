@@ -14,7 +14,6 @@
 
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 /* 
@@ -25,22 +24,31 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        List<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Москва");
+        list.add("Ивановы");
+        list.add("Киев");
+        list.add("Петровы");
+        list.add("Лондон");
+        list.add("Абрамовичи");
+
+        System.out.println("Укажите Город, а затем Фамилию");
         while (true) {
-            String family = scanner.nextLine();
-            if (family.isEmpty()) {
+            String cityFamily = scanner.nextLine();
+            if (cityFamily.isEmpty()) {
                 break;
             }
-
-            list.add(family);
+            list.add(cityFamily);
         }
 
-        // Read the house number
-        int houseNumber = scanner.nextInt();
+        // Read the city
+        System.out.println("Для поиска фамилии введите город: ");
+        String city = scanner.nextLine();
 
-        if (0 <= houseNumber && houseNumber < list.size()) {
-            String familyName = list.get(houseNumber);
+        if (list.contains(city)) {
+            String familyName = list.get(list.indexOf(city)+1);
             System.out.println(familyName);
         }
+        else System.out.println("Фамилия не найдена.");
     }
 }

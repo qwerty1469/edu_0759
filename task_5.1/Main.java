@@ -17,5 +17,15 @@ public class Main {
         names.add("Георгий");
         names.add("Павел");
         names.add("Руслан");
+
+        int i = 0;
+        while (i < names.size()) {
+            if (names.lastIndexOf(names.get(i)) > i ) {
+                names.remove(i);
+                continue;
+            }
+            i++;
+        }
+        System.out.println(names);
     }
 }
