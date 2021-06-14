@@ -1,5 +1,4 @@
-  
-/* 
+/*
 1. Ввести путь к файлу с консоли.
 2. Прочитать из него набор чисел.
 3. Вывести на консоль только четные, отсортированные по возрастанию.
@@ -19,8 +18,44 @@
 10
 */
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Main {
     public static void main(String[] args) {
-        // напишите тут ваш код
+//        int i = Integer.parseInt("-2");
+//        System.out.println(i + 1);
+        try {
+            FileInputStream fis = new FileInputStream("C://projava/test.txt"); // в файле указаны на каждой строке числа из примера, каретка после 10: 10|
+            int i;
+            String value = "";
+            while (true) {
+                i = fis.read();
+                if (i == 13)
+                    continue;
+                else if (i == 10) {
+                    if (Integer.parseInt(value)%2==0) {
+                        System.out.println(value);
+                        value = "";
+                        continue;
+                    }
+                    else {
+                        value = "";
+                        continue;
+                    }
+                }
+                if (i == -1){
+                    if (Integer.parseInt(value)%2==0) {
+                        System.out.println(value);
+                        break;
+                    }
+                    else break;
+                }
+                value += (char) i;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
