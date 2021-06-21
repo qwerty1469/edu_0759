@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox prefHeight="350.0" prefWidth="400" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <TextArea fx:id="userListTextArea" editable="false" prefWidth="125" />
+   <VBox alignment="center" prefHeight="300" prefWidth="275">
+      <children>
+         <TextArea fx:id="textArea" editable="true" prefHeight="294.0" prefWidth="275.0" wrapText="true">
+            <font>
+               <Font size="13.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="1.0" left="1.0" />
+            </VBox.margin>
+         </TextArea>
+         <HBox prefHeight="25" prefWidth="300">
+            <children>
+               <TextField fx:id="textField" maxHeight="26.0" maxWidth="225.0" minHeight="0.0" minWidth="0.0" onAction="#send" prefHeight="26.0"
+                          prefWidth="225" promptText="Введите текст" />
+               <Button alignment="CENTER" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" onAction="#send" prefHeight="26.0" prefWidth="75"
+                       text="--&gt;" textAlignment="CENTER" />
+            </children>
+            <VBox.margin>
+               <Insets left="1.0" />
+            </VBox.margin>
+         </HBox>
+         <Button fx:id="connectBtn" onAction="#connect" prefHeight="26.0" prefWidth="Infinity" text="Подключиться">
+            <VBox.margin>
+               <Insets bottom="1.0" left="1.0" top="1.0" />
+            </VBox.margin></Button>
+      </children>
+   </VBox>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</HBox>
