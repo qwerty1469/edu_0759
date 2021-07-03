@@ -5,18 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<User> users = new ArrayList<>();
+    ArrayList<User> userList = new ArrayList<>();
     RecyclerView recyclerView;
     UserAdapter userAdapter;
+    Button addUserBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,43 +31,57 @@ public class MainActivity extends AppCompatActivity {
         // указываем как необходимо упорядочить будущее размещение списка
         // LinearLayoutManager - упорядочивает элементы в виде списка с одной колонкой
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        // создаем 100 контактов и добавляем их в коллекцию ArrayList
-        for (int i = 0; i < 100; i++) {
-            User user = new User();
-            user.setUserName("Пользователь №"+i);
-            user.setUserLastName("Фамилия №"+i);
-            users.add(user);
-        }
-        userAdapter = new UserAdapter(users);
+        addUserBtn = findViewById(R.id.addUserBtn);
+        addUserBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UserFormActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        recyclerViewInit();
+    }
+
+    private void recyclerViewInit() {
+        Users users = new Users(MainActivity.this);
+        userList = users.getUserList();
+        userAdapter = new UserAdapter(userList);
         recyclerView.setAdapter(userAdapter);
     }
 
-    // ViewHolder - элемент списка
-    private static class UserHolder extends RecyclerView.ViewHolder {
+    private class UserHolder extends RecyclerView.ViewHolder { // ViewHolder - элемент списка
         TextView itemTextView;
-        // конструктор. Inflater - раздувает макет
-        public UserHolder(LayoutInflater inflater, ViewGroup viewGroup) {
+        public UserHolder(LayoutInflater inflater, ViewGroup viewGroup) {   // конструктор. Inflater - раздувает макет
             super(inflater.inflate(R.layout.single_item, viewGroup, false));
-            // itemView - текущий layout single_item
-            itemTextView = itemView.findViewById(R.id.itemTextView);
+            itemTextView = itemView.findViewById(R.id.itemTextView);    // itemView - текущий layout single_item
+            itemTextView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, ViewingUserActivity.class);
+                    intent.putExtra("CurrentUser", itemTextView.getText());
+                    startActivity(intent);
+                }
+            });
         }
 
-        public void bind(String userString){
-            itemTextView.setText(userString);
-        }
+        public void bind (String userString){ itemTextView.setText(userString); }
+
     }
 
-    // Adapter - помещает элементы списка на RecyclerView
-    private class UserAdapter extends RecyclerView.Adapter<UserHolder> {
+    private class UserAdapter extends RecyclerView.Adapter<UserHolder> {    // Adapter - помещает элементы списка на RecyclerView
         ArrayList<User> users;
         public UserAdapter(ArrayList<User> users) {
             this.users = users;
         }
 
-        // Метод для создания нового ViewHolder (элемента списка)
         @NonNull
         @Override
-        public UserHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        public UserHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) { // Метод для создания нового ViewHolder (элемента списка)
             LayoutInflater inflater = LayoutInflater.from(MainActivity.this);   // раздувает макет
             return new UserHolder(inflater, viewGroup);
         }
@@ -71,13 +90,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(UserHolder userHolder, int position) {
             User user = users.get(position);
-            String userString = user.getUserName()+"\n"+user.getUserLastName();
+            String userString = user.getUserName()+ " " + user.getUserLastName() + "\n" + user.getPhone();
             userHolder.bind(userString);
         }
 
-        // Возвращает кол-во объектов в коллекции ArrayList для размещения
         @Override
-        public int getItemCount() {
+        public int getItemCount() { // Возвращает кол-во объектов в коллекции ArrayList для размещения
             return users.size();
         }
     }
