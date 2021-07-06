@@ -20,7 +20,7 @@ public class UserCursorWrapper extends CursorWrapper {
         User user = new User(UUID.fromString(uuidString));
         user.setUserName(userName);
         user.setUserLastName(userLastName);
-        user.setPhone(userPhone);
+        user.setUserPhone(userPhone);
         return user;
     }
 }

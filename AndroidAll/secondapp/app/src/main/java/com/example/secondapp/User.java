@@ -1,8 +1,9 @@
 package com.example.secondapp;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class User {
+public class User implements Serializable {
     private String userName;
     private String userLastName;
     private UUID uuid;
@@ -34,7 +35,7 @@ public class User {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setUserPhone(String phone) {
         this.phone = phone;
     }
 

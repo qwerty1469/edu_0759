@@ -11,12 +11,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/add_user_form"
-        android:textSize="28sp"/>
+        android:textSize="26sp"/>
 
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="26sp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -26,6 +27,7 @@
         android:id="@+id/editTextLastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="26sp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -35,6 +37,7 @@
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="26sp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/form_phone_hint"

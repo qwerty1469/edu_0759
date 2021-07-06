@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">secondapp</string>
-    <string name="add_user_main">Добавить человека</string>
-    <string name="add_user_form">Добавить человека</string>
+    <string name="add_user_main">Добавить контакт</string>
+    <string name="add_user_form">Добавить/Изменить контакт</string>
     <string name="form_name_hint">Имя</string>
     <string name="form_lastname_hint">Фамилия</string>
     <string name="form_phone_hint">Номер телефона</string>
-    <string name="delete_user">Удалить запись</string>
+    <string name="edit_user">Редактировать</string>
+    <string name="delete_user">Удалить</string>
 </resources>

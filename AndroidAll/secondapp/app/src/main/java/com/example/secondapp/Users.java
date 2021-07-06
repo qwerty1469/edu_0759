@@ -10,6 +10,7 @@ import com.example.secondapp.database.UserBaseHelper;
 import com.example.secondapp.database.UserDBSchema;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Users {
     private ArrayList<User> userList;
@@ -28,7 +29,6 @@ public class Users {
 
     private static ContentValues getContentValues(User user) {
         ContentValues values = new ContentValues();
-        // Сопоставляем колонки и свойства объекта User
         values.put(UserDBSchema.Cols.UUID, user.getUuid().toString());
         values.put(UserDBSchema.Cols.USERNAME, user.getUserName());
         values.put(UserDBSchema.Cols.USERLASTNAME, user.getUserLastName());
@@ -51,10 +51,35 @@ public class Users {
                 userList.add(user);
                 cursorWrapper.moveToNext();
             }
-        }finally {
+        } finally {
             System.out.println("Исключение CursorWrapper. Закрытие");
             cursorWrapper.close();
         }
         return userList;
+    }
+
+    public User getUserFromDB(UUID uuid) {
+        Cursor cursor = database.query(UserDBSchema.UserTable.NAME,
+                null,
+                UserDBSchema.Cols.UUID+"=?",
+                new String[]{uuid.toString() },
+                null, null, null);
+        UserCursorWrapper cursorWrapper = new UserCursorWrapper(cursor);
+        cursorWrapper.moveToFirst();
+        return cursorWrapper.getUser();
+    }
+
+    public void removeUser(UUID uuid) {
+        String stringUuid = uuid.toString();
+        database.delete(UserDBSchema.UserTable.NAME,
+                UserDBSchema.Cols.UUID+"=?", new String[]{stringUuid});
+    }
+
+    public void updateUser(User user) {
+        ContentValues values = getContentValues(user);
+        String stringUuid = user.getUuid().toString();
+        database.update(UserDBSchema.UserTable.NAME,
+                values,
+                UserDBSchema.Cols.UUID+"=?", new String[]{stringUuid});
     }
 }
